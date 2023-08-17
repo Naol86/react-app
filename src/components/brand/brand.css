@@ -1,0 +1,85 @@
+.brand {
+    padding: 50px;
+    cursor: pointer;
+    color: #cecece;
+    font-size: 38px;
+    justify-content: center;
+    background: linear-gradient(80deg, rgba(0, 60, 80, 40) 8%, rgba(14, 71, 90, 7) 21%, rgba(20, 111, 123, 1) 46%, rgba(7, 26, 33, 1) 100%);
+}
+.brand__size{
+    opacity: 0.7;
+    display: flex;
+    justify-content: center;
+    padding-left: 200px;
+    padding-right: 200px;
+    /* max-width: 1200px; */
+}
+
+.brand p{
+    font-size: 20px;
+    display: inline;
+    margin: 10px 0 10px 0;
+    position: absolute;
+}
+
+.brand__name-google {
+    display: inline-block;
+    min-width: 110px;
+}
+
+.brand__name-slack {
+    display: inline;
+    min-width: 90px;
+}
+
+.brand__name-atlassian {
+    display: inline;
+    min-width: 120px;
+}
+
+.brand__name-dropbox {
+    display: inline;
+    min-width: 115px;
+}
+
+.brand__name-shopify {
+    display: inline;
+    min-width: 110px;
+}
+
+
+@media screen and (max-width: 1050px){
+    .brand{
+        font-size: 25px;
+    }
+    .brand__size {
+        padding: 0;
+        display: flex;
+    }
+
+    .brand p{
+        display: none;
+    }
+    
+    .brand__name-google,
+    .brand__name-slack,
+    .brand__name-atlassian,
+    .brand__name-dropbox,
+    .brand__name-shopify {
+        min-width: 50px;
+    }
+}
+
+@media screen and (max-width: 600){
+    .brand{
+        color: rgb(0, 106, 245);
+    }
+
+}
+
+@media screen and (max-width:450){
+    .brand{
+        size: 25px;
+        color: rgb(91, 233, 9);
+    }
+}
